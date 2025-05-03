@@ -43,7 +43,7 @@ async def account_login(bot: Client, m: Message):
     user_id = m.from_user.id if m.from_user is not None else None
 
     if user_id not in auth_users and user_id not in sudo_users:
-        await m.reply(f"**You Are Not Subscribed To This Bot\nContact - @Mahagoraxyz**", quote=True)
+        await m.reply(f"**You Are Not Subscribed To This Bot\nContact - @iAbhi4**", quote=True)
         return
         
     editable = await m.reply_text(f"**Hey [{m.from_user.first_name}](tg://user?id={m.from_user.id})\nSend txt file**")
